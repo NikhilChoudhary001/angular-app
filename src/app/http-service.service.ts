@@ -9,7 +9,7 @@ export class HttpServiceService<T> {
 
   constructor(private http: HttpClient) { }
 
-  getData(): Observable<T> {
-    return this.http.get("http://localhost:8081");
-  }
+ /*  getData(): Observable<T> {
+    //return this.http.get("http://localhost:8081");
+  } */
 }

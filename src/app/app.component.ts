@@ -10,13 +10,15 @@ import { EmployeeData } from 'src/assets/model/Employee';
 export class AppComponent {
   title = 'angular-app';
   empData : EmployeeData;
+  show: boolean = false;
 
   constructor(private http: HttpServiceService<EmployeeData>)
   {
 
   }
   getData(){
-    this.http.getData().subscribe(data => {this.empData = data;})
-    console.log("Calling HttpService");
+    //this.http.getData().subscribe(data => {this.empData = data;})
+    this.show = true;
+    console.log("Demo Application");
   }
 }
